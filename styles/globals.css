@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --primary: 0 84% 45%;
+    --primary-foreground: 0 85.7% 97.3%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+body {
+  padding-top: 3rem; /* Ajusta este valor según la altura de tu NavBar */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilos para el contenido principal */
+main {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem; /* Ajusta este valor según sea necesario */
+  flex: 1;
+}
+
+/* Ajustes para dispositivos de escritorio */
+@media (min-width: 1024px) {
+  main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Ajustes para la barra lateral en dispositivos de escritorio */
+@media (min-width: 1024px) {
+  body {
+    padding-left: 16rem; /* Ancho de la barra lateral */
+  }
+}
+

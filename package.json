@@ -62,7 +62,7 @@
     "@emotion/is-prop-valid": "latest",
     "@supabase/auth-helpers-nextjs": "latest",
     "qrcode.react": "latest",
-
+    "https:": "latest",
     "framer-motion": "latest"
   },
   "devDependencies": {
